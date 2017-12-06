@@ -1,19 +1,36 @@
 import React, { Component } from 'react';
+import { SingleService } from '../moduleLoader';
 
 export class WeHelpPeopleTo extends Component {
     render(){
+
+        let lang = this.props.lang;
+        const findText = this.props.findText;
+        const db = this.props.texts;
+
+        const gridTitle = findText(db,['ServicesText','thumbsGridHeaderTitle',lang]);
+        const gridTitleDescr = findText(db,['ServicesText','thumbsGridHeaderDescr', lang]);
+      
+        const shortTermBackImg = findText(db,['ServicesText','shortTerm', 'backImg']);
+        const shortTermTitle = findText(db,['ServicesText','shortTerm', 'title',lang]);
+        const shortTermDescr = findText(db,['ServicesText','shortTerm', 'descr',lang]);
+        const shortTermBtnLbl = findText(db,['ServicesText','shortTerm', 'buttonLbl',lang]);
+
+         
         return(
             <section className="service-area">
                 <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-8">
                     <div className="section-title text-center">
-                        <h3 className="text-white">Our Offered Services</h3>
-                        <span className="text-white text-uppercase">Re-imagining the way</span>
+                        <h3 className="text-white">{gridTitle}</h3>
+                        <span className="text-white text-uppercase">{gridTitleDescr}</span>
                     </div>
                     </div>
                 </div>
                 <div className="row">
+                    <SingleService title={shortTermTitle} descr={shortTermDescr} buttonLbl={shortTermBtnLbl} backImg={shortTermBackImg} />
+
                     <div className="col-lg-3 col-sm-6">
                     <div className="single-service">
                         <div className="thumb" style={{background: "url(img/s1.jpg)"}}>

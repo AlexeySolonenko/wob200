@@ -6,9 +6,9 @@ export class LandingPage extends Component {
         return(
             <div>
                 <div className="main-wrapper">
-                    <m.Banner01 findTexts={this.props.findTexts} lang={this.props.lang} />
-                    <m.FeatureArea />
-                    <m.WeHelpPeopleTo />
+                    <m.Banner01 findText={this.props.findText} lang={this.props.lang} texts={this.props.texts}/>
+                    <m.FeatureArea  findText={this.props.findText} lang={this.props.lang} texts={this.props.texts}/>
+                    <m.WeHelpPeopleTo findText={this.props.findText} lang={this.props.lang} texts={this.props.texts} />
                 </div>
                 <div className="main-wrapper">
                     <m.HowWeWork />
