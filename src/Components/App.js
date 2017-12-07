@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as m from '../moduleLoader';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 import { t } from '../TextLoader';
 import * as u from '../utilsLoader';
 import _ from 'lodash';
@@ -16,6 +16,7 @@ class App extends Component {
 
   };  
     findText = u.searchNestedArrays; 
+
 
   switchLang() {
     let newState = this.state;
@@ -37,7 +38,7 @@ class App extends Component {
               </div>
               {/* <m.LandingPage /> */} 
                 <Route exact path='/' render={(props) => <m.LandingPage {...props} texts={t} findText={this.findText} lang={this.state.appLang} />} />
-                <Route exact path="/services" render={(props)=> <m.ServicesPage {...props} labelName={this.translateMenuItems}/> } />
+                <Route path="/services" render={(props)=> <m.ServicesPage {...props} labelName={this.translateMenuItems}/> } />
                 <Route exact path="/freeServices" component={m.FreeServicesPage} />
                 <Route exact path="/contacts" component={m.ContactsPage} />
               <div className="main-wrapper">
