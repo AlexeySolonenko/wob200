@@ -25,14 +25,12 @@ export class WeHelpPeopleTo extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <m.ShortTermCoursesThumb lang={this.props.lang} />
-                    <m.LongTermCoursesThumb lang={this.props.lang} />
-                    <m.FamilyKidsCoursesThumb lang={this.props.lang} />
-                    <m.BusinessCoursesThumb lang={this.props.lang} />
-                    <m.TeacherCertsCoursesThumb lang ={this.props.lang} />
-                    <m.ExamsCoursesThumb lang={this.props.lang} />
-
-
+                    <div className="col-sm-6 col-md-3"><m.ShortTermCoursesThumb lang={this.props.lang} /></div>
+                    <div className="col-sm-6 col-md-3"><m.LongTermCoursesThumb lang={this.props.lang} /></div>
+                    <div className="col-sm-6 col-md-3"><m.FamilyKidsCoursesThumb lang={this.props.lang} /></div>
+                    <div className="col-sm-6 col-md-3"><m.BusinessCoursesThumb lang={this.props.lang} /></div>
+                    <div className="col-sm-6 col-md-3"><m.TeacherCertsCoursesThumb lang ={this.props.lang} /></div>
+                    <div className="col-sm-6 col-md-3"><m.ExamsCoursesThumb lang={this.props.lang} /></div>
 
 
                 </div>

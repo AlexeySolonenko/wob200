@@ -1,5 +1,5 @@
 .custom-header-spacer {
-    height: 300px;
+    height: 100px;
     background-image: -moz-linear-gradient(0deg, #e66587 0%, #f09458 100%);
     background-image: -webkit-linear-gradient(0deg, #e66587 0%, #f09458 100%);
     background-image: -ms-linear-gradient(0deg, #e66587 0%, #f09458 100%);
@@ -7,4 +7,47 @@
 
 .banner-area, .height {
     height: 300px;
+}
+
+.custom-navbar-collapsible01 {
+
+}
+
+.custom-body-shifter { 
+    position: absolute;
+    top: 30px;
+}
+
+
+.navbar-spacer-sm {
+    z-index: 498;
+    height: 50px;
+    position: fixed;
+    width: calc(100vw - 40px);
+    margin-left: 10px;
+    margin-right: 10px;
+
+    margin-top: 0px;
+    padding-top: 0px;
+    top: 0px;
+
+    background-image: -moz-linear-gradient(0deg, #e66587 0%, #f09458 100%);
+    background-image: -webkit-linear-gradient(0deg, #e66587 0%, #f09458 100%);
+     background-image: -ms-linear-gradient(0deg, #e66587 0%, #f09458 100%); 
+}
+
+.navbar-spacer-lg {
+    z-index: 500;
+    position: fixed;
+    width: calc(100vw - 100px);
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 45px;
+    margin-top: 0px;
+    padding-top: 0px;
+    top: 0px;
+
+    background-image: -moz-linear-gradient(0deg, #e66587 0%, #f09458 100%);
+    background-image: -webkit-linear-gradient(0deg, #e66587 0%, #f09458 100%);
+    background-image: -ms-linear-gradient(0deg, #e66587 0%, #f09458 100%);
 }

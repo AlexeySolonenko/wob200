@@ -6,74 +6,72 @@ import * as m from '../../moduleLoader';
 import { CoursesNav } from '../CoursesNav';
 import { AccommodationNav } from '../AccommodationNav';
 import { AssistanceNav } from '../AssistanceNav';
-
-const Mod1 = (props) => {
-    return (
-        <div>
-            test
-        </div>
-    );
-}
+import { searchNestedArrays } from '../../Utils/searchNestedArrays';
+import { t } from '../../TextLoader';
 
 export class ServicesPage extends Component {
     render(){
-        console.log(this.props.location);
         let coursesSection = false;
         let accomSection = false;
         let assistSection = false;
         if (this.props.location.pathname.includes('courses-nav')) { coursesSection = true} else {coursesSection = false};
+        // !!!! ALSO ADD /SERVICES/ to identification
         if (this.props.location.pathname.includes('accommodation-nav')) { accomSection = true} else {accomSection = false};
         if (this.props.location.pathname.includes('assistance-nav')) { assistSection = true} else {assistSection = false};
-        console.log(coursesSection);
-        console.log(this.props.location.pathname);
+
+        let lang = this.props.lang;
+        // const findText = props.findText;
+        const findText = searchNestedArrays;
+        
+        const servicesPageTitle = findText(t,['ServicesText','servicesPageTitle',lang]);
+        const servicesPageWelcMsg = findText(t,['ServicesText','servicesPageWelcMsg',lang]);
+
+        const servicesPageMenuCoursesTitle = findText(t,['ServicesText','servicesPageMenuCoursesTitle',lang]);
+        const servicesPageMenuAccomTitle = findText(t,['ServicesText','servicesPageMenuAccomTitle',lang]);
+        const servicesPageMenuAssistTitle = findText(t,['ServicesText','servicesPageMenuAssistTitle',lang]);
+
+
+
         return(
             <div>
                 <ScrollToTopOnMount />
-
-                <div className="custom-header-spacer">
-
-                </div>
-                <div className="main-wrapper">
-                    <section className="featured-area">
+                <div className = "main-wrapper mt-5">
                     <div className="container">
-                    <div className="row">
-                    <div className="col-sm-12">
-
-                        <nav className="show ml-1 mr-1 text-dark mb-1 mt-1">
-                            <Link to="/services/courses-nav" className={coursesSection?"text-primary":"text-muted"}> COURSES </Link>
-                            <Link to="/services/accommodation-nav" className={accomSection?"text-primary":"text-muted"} > ACCOMMODATION </Link>
-                            <Link to="/services/assistance-nav"  className={assistSection?"text-primary":"text-muted"} >ASSISTANCE</Link>
-                        </nav>
-                    </div>
-                    </div>
-                    </div>
-                    </section>
-                </div>
-
-
-                <div className="main-wrapper">
-                    <section className="featured-area">
-                    <div className="container">
-                    <div className="row">
-                        <div className="col-md-4">
-                            <Route path={`${this.props.match.url}/courses-nav`} component={CoursesNav} />
-                            <Route path={`${this.props.match.url}/accommodation-nav` } component={AccommodationNav} />
-                            <Route path={`${this.props.match.url}/assistance-nav` } component={AssistanceNav} />
-                            <Route exact path='/services' component={CoursesNav} />
-                        </div>
-
-                        <div className="col-md-8">
-                            Services Page
-                        <Mod1  />
-                        <Link to="/services/courses-nav/short-term"  > SHORT TERM </Link>
-                        <Link to="/services/courses-nav/long-term" > LONG TERM </Link>
-                        <Route exact path={`${this.props.match.url}/short-term`} component={ShortTermCourses} />
-                        <Route exact path={`${this.props.match.url}/long-term`} component={LongTermCourses} />  
-
-
+                        <div className=" row pt-3 bg-white">
+                            <div className="col-sm-12">
+                                <h3>{servicesPageTitle}</h3>
+                                <p>{servicesPageWelcMsg}</p>
+                            </div>
                         </div>
                     </div>
-                    </div>
+                </div>
+
+                <div className="main-wrapper">
+                    <section className="service-area pt-1 pb-1">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <div className="row">
+                                        <Link to="/services/courses-nav" className="col-sm-12 genric-btn success-border">{servicesPageMenuCoursesTitle}</Link>
+                                        <Route path={`${this.props.match.url}/courses-nav`} render={(props)=><m.CoursesNav {...props} lang={this.props.lang} /> }  />
+                                        <Link to="/services/accommodation-nav"  className="col-sm-12 genric-btn success-border">{servicesPageMenuAccomTitle}</Link>
+                                        <Route path={`${this.props.match.url}/accommodation-nav` } component={AccommodationNav} />
+                                        <Link to="/services/assistance-nav"  className="col-sm-12 genric-btn success-border">{servicesPageMenuAssistTitle}</Link>
+                                        <Route path={`${this.props.match.url}/assistance-nav` } component={AssistanceNav} />
+                                    </div>
+                                </div>
+                                <div className="col-md-8 pt-2 pb-2">
+                                    <Route exact path={`${this.props.match.url}/courses-nav`} render={(props)=><m.CoursesThumbsAssembled {...props} lang={this.props.lang} />} />
+                                    <Route exact path='/services/courses-nav/short-term' component={ShortTermCourses} />
+                                </div>
+                                <div className="col-sm-12">
+                                    
+                                    <Link to="/services/courses-nav/long-term"> LONG TERM </Link>
+                                    
+                                    <Route exact path={`${this.props.match.url}/long-term`} component={LongTermCourses} />  
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>

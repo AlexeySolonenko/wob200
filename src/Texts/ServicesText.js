@@ -21,7 +21,7 @@ export const ServicesText = {
                     ]
                 },
                 {
-                    backImg : 'url(img/courses/ShortTermCourses001.jpg)'
+                    backImg : 'url(/img/courses/ShortTermCourses001.jpg)'
                 },
                 {
                     link : '/services/courses-nav/short-term'
@@ -49,7 +49,7 @@ export const ServicesText = {
                     ]
                 },
                 {
-                    backImg : 'url(img/courses/Long_TermCourses001.jpg)'
+                    backImg : 'url(/img/courses/Long_TermCourses001.jpg)'
                 },
                 {
                     link : '/services/courses-nav/long-term'
@@ -78,7 +78,7 @@ export const ServicesText = {
                     ]
                 },
                 {
-                    backImg : 'url(img/courses/Business_courses_001.jpg)'
+                    backImg : 'url(/img/courses/Business_courses_001.jpg)'
                 },
                 {
                     link : '/services/courses-nav/business-courses'
@@ -107,7 +107,7 @@ export const ServicesText = {
                     ]
                 },
                 {
-                    backImg : 'url(img/courses/FamilyAndChildren_001.jpg)'
+                    backImg : 'url(/img/courses/FamilyAndChildren_001.jpg)'
                 },
                 {
                     link : '/services/courses-nav/familyKids-courses'
@@ -136,7 +136,7 @@ export const ServicesText = {
                     ]
                 },
                 {
-                    backImg : 'url(img/courses/Exam_Preparation_Courses_001.jpg)'
+                    backImg : 'url(/img/courses/Exam_Preparation_Courses_001.jpg)'
                 },
                 {
                     link : '/services/courses-nav/exams-courses'
@@ -165,7 +165,7 @@ export const ServicesText = {
                     ]
                 },
                 {
-                    backImg : 'url(img/courses/Teaching001.jpg)'
+                    backImg : 'url(/img/courses/Teaching001.jpg)'
                 },
                 {
                     link : '/services/courses-nav/teacher-certs'
@@ -183,6 +183,37 @@ export const ServicesText = {
             thumbsGridHeaderDescr : [
                 { en : 'We arrange all you need to study English abroad: curriculum, accommodation, assistance with documents.' },
                 { ru : 'Мы планируем и проводим все необходимое для изучения английского зарубежом: учебный план, проживание и помощь с документами.' }
+            ]
+        },
+        {
+            servicesPageTitle : [
+                { en : 'FULL RANGE OF SERVICES FROM VISA TO ACCOMODATION' },
+                { ru : 'ПОЛНЫЙ ПЕРЕЧЕНЬ УСЛУГ ОТ ВИЗЫ ДО ПРОЖИВАНИЯ' }
+
+            ]
+        },
+        {
+            servicesPageWelcMsg : [
+                { en : 'We offer the full range of the services' },
+                { ru : 'Мы предоставляем полный переченьт услуг ....' }
+            ]
+        },
+        {
+            servicesPageMenuCoursesTitle : [
+                { en : 'EDUCATION&TRAINIG' },
+                { ru : 'УЧЕБА И ПРОФ. КУРСЫ' }
+            ]
+        },
+        {
+            servicesPageMenuAccomTitle : [
+                { en : 'ACCOMMODATION' },
+                { ru : 'ПРОЖИВАНИЕ' }
+            ]
+        },
+        {
+            servicesPageMenuAssistTitle : [
+                { en : 'ASSISTANCE' },
+                { ru : 'СОПРОВОЖДЕНИЕ' }
             ]
         }
     ]

@@ -6,6 +6,7 @@ export { BusinessCoursesThumb } from './Components/BusinessCoursesThumb';
 export { ContactsPage } from './Components/Pages/ConctactsPage';
 export { Courses } from './Components/Courses';
 export { CoursesNav } from './Components/CoursesNav';
+export { CoursesThumbsAssembled } from './Components/CoursesThumbsAssembled';
 export { ExamsCoursesThumb } from './Components/ExamsCoursesThumb';
 export { FamilyKidsCoursesThumb } from './Components/FamilyKidsCoursesThumb';
 export { FeatureArea } from './Components/FeatureArea';
@@ -20,6 +21,9 @@ export { LanguageSwitcher } from './Components/LanguageSwitcher';
 export { Locations } from './Components/Locations';
 export { LongTermCourses } from './Components/LongTermCourses';
 export { LongTermCoursesThumb } from './Components/LongTermCoursesThumb';
+export { NavBarC } from './Components/NavBarC';
+export { NavBarCollapsible } from './Components/NavBarCollapsible';
+export { NavBarSpacer } from './Components/NavBarSpacer';
 //export { RouterSwitch01 } from './Components/RouterSwitch01';
 export { ServicesPage } from './Components/Pages/ServicesPage';
 export { ShortTermCourses } from './Components/ShortTermCourses';
@@ -31,5 +35,10 @@ export { SubscriptionArea } from './Components/SubscriptionArea';
 export { SuccessStories } from './Components/SuccessStories';
 export { TeacherCertsCoursesThumb } from './Components/TeacherCertsCoursesThumb';
 export { WeHelpPeopleTo } from './Components/WeHelpPeopleTo';
+
+// MAKE TRANSITIONS TO MOBILE VIEW
+// DRAW A DESIGN BACIALLY, TO WORK-OUT WITH MOBILE-FIRST CONCEPT
+// NORMAL STANDARD GOOD BOOTSTRAP-NAVBAR
+
 
 export { testT } from './Components/testT';
