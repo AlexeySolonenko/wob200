@@ -6,6 +6,7 @@ let link = props.link;
 if(!props.link) { link="/"};
         return(
                 <div className="single-service">
+                 <Link to={link}>
                     <div className="thumb" style={{background: props.backImg}}>
                         <div className="overlay overlay-content d-flex justify-content-center align-items-center">
                             <Link to={link} className="primary-btn hover d-inline-flex align-items-center">
@@ -17,6 +18,8 @@ if(!props.link) { link="/"};
                     <h6 className="text-uppercase text-white">{props.title}</h6>
                     <p className="text-white">{props.descr}</p>
                     </div>
+                   </Link>
+                    
                 </div>
         );
 };

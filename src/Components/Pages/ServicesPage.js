@@ -14,10 +14,10 @@ export class ServicesPage extends Component {
         let coursesSection = false;
         let accomSection = false;
         let assistSection = false;
-        if (this.props.location.pathname.includes('courses-nav')) { coursesSection = true} else {coursesSection = false};
+        if (this.props.location.pathname.includes('courses')) { coursesSection = true} else {coursesSection = false};
         // !!!! ALSO ADD /SERVICES/ to identification
-        if (this.props.location.pathname.includes('accommodation-nav')) { accomSection = true} else {accomSection = false};
-        if (this.props.location.pathname.includes('assistance-nav')) { assistSection = true} else {assistSection = false};
+        if (this.props.location.pathname.includes('accommodation')) { accomSection = true} else {accomSection = false};
+        if (this.props.location.pathname.includes('assistance')) { assistSection = true} else {assistSection = false};
 
         let lang = this.props.lang;
         // const findText = props.findText;
@@ -52,11 +52,11 @@ export class ServicesPage extends Component {
                             <div className="row">
                                 <div className="col-md-4">
                                     <div className="row">
-                                        <Link to="/services/courses-nav" className="col-sm-12 genric-btn success-border">{servicesPageMenuCoursesTitle}</Link>
+                                        <Link to="/services/courses" className="col-sm-12 genric-btn success-border">{servicesPageMenuCoursesTitle}</Link>
                                         <Route path={`${this.props.match.url}/courses`} render={(props)=><m.CoursesNav {...props} lang={this.props.lang} /> }  />
-                                        <Link to="/services/accommodation-nav"  className="col-sm-12 genric-btn success-border">{servicesPageMenuAccomTitle}</Link>
+                                        <Link to="/services/accommodation"  className="col-sm-12 genric-btn success-border">{servicesPageMenuAccomTitle}</Link>
                                         <Route path={`${this.props.match.url}/accommodation` } component={AccommodationNav} />
-                                        <Link to="/services/assistance-nav"  className="col-sm-12 genric-btn success-border">{servicesPageMenuAssistTitle}</Link>
+                                        <Link to="/services/assistance"  className="col-sm-12 genric-btn success-border">{servicesPageMenuAssistTitle}</Link>
                                         <Route path={`${this.props.match.url}/assistance` } component={AssistanceNav} />
                                     </div>
                                 </div>

@@ -20,11 +20,11 @@ export const CoursesNav = (props) => {
     const TeachCert = findText(t,['ServicesText','teachCerts','title',lang]);
     const ExamCert = findText(t,['ServicesText','exams','title',lang]);
 
-    const shorTermTitle = findText(t,['ServicesText','shortTerm', 'title',lang]);
+    const shortTermTitle = findText(t,['ServicesText','shortTerm', 'title',lang]);
     const longTermTitle = findText(t,['ServicesText','longTerm', 'title',lang]);
     const kidsAndFamTitle = findText(t,['ServicesText','familyKids', 'title',lang]);
     const businessTitle = findText(t,['ServicesText','businessEnglish', 'title',lang]);
-    const teacherCertsTitle = findText(t,['ServicesText','teachCerts', 'title',lang]);
+    const teachCertsTitle = findText(t,['ServicesText','teachCerts', 'title',lang]);
     const examsTitle = findText(t,['ServicesText','exams', 'title',lang]);
 
     const ShortTermLink = findText(t,['ServicesText','shortTerm','link']);
@@ -34,14 +34,16 @@ export const CoursesNav = (props) => {
     const TeachCertLink = findText(t,['ServicesText','teachCerts','link']);
     const ExamLink = findText(t,['ServicesText','exams','link']);
     
+
+
     return (
         <ul role="nav" className="col-sm-12 unordered-list bg-white">
-            <li><Link to={ShortTermLink}>{ShortTermTitle}</Link></li>
-            <li><Link to={LongTermLink}>{LongTermTitle}</Link></li>
-            <li><Link to={KidsFamLink}>{KidsFamTitle}</Link></li>
-            <li><Link to={BusinessLink}>{BusinessTitle}</Link></li>
-            <li><Link to={TeachCertLink}>{TeachCertTitle}</Link></li>
-            <li><Link to={ExamLink}>{ExamCertTitle}</Link></li>
+            <li><Link to={ShortTermLink}>{shortTermTitle}</Link></li>
+            <li><Link to={LongTermLink}>{longTermTitle}</Link></li>
+            <li><Link to={KidsFamLink}>{kidsAndFamTitle}</Link></li>
+            <li><Link to={BusinessLink}>{businessTitle}</Link></li>
+            <li><Link to={TeachCertLink}>{teachCertsTitle}</Link></li>
+            <li><Link to={ExamLink}>{examsTitle}</Link></li>
         </ul>
     );
 }
