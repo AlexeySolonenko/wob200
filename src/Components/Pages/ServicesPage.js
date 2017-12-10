@@ -53,20 +53,20 @@ export class ServicesPage extends Component {
                                 <div className="col-md-4">
                                     <div className="row">
                                         <Link to="/services/courses-nav" className="col-sm-12 genric-btn success-border">{servicesPageMenuCoursesTitle}</Link>
-                                        <Route path={`${this.props.match.url}/courses-nav`} render={(props)=><m.CoursesNav {...props} lang={this.props.lang} /> }  />
+                                        <Route path={`${this.props.match.url}/courses`} render={(props)=><m.CoursesNav {...props} lang={this.props.lang} /> }  />
                                         <Link to="/services/accommodation-nav"  className="col-sm-12 genric-btn success-border">{servicesPageMenuAccomTitle}</Link>
-                                        <Route path={`${this.props.match.url}/accommodation-nav` } component={AccommodationNav} />
+                                        <Route path={`${this.props.match.url}/accommodation` } component={AccommodationNav} />
                                         <Link to="/services/assistance-nav"  className="col-sm-12 genric-btn success-border">{servicesPageMenuAssistTitle}</Link>
-                                        <Route path={`${this.props.match.url}/assistance-nav` } component={AssistanceNav} />
+                                        <Route path={`${this.props.match.url}/assistance` } component={AssistanceNav} />
                                     </div>
                                 </div>
                                 <div className="col-md-8 pt-2 pb-2">
-                                    <Route exact path={`${this.props.match.url}/courses-nav`} render={(props)=><m.CoursesThumbsAssembled {...props} lang={this.props.lang} />} />
-                                    <Route exact path='/services/courses-nav/short-term' component={ShortTermCourses} />
+                                    <Route exact path={`${this.props.match.url}/courses`} render={(props)=><m.CoursesThumbsAssembled {...props} lang={this.props.lang} />} />
+                                    <Route exact path='/services/courses/short-term' component={ShortTermCourses} />
                                 </div>
                                 <div className="col-sm-12">
                                     
-                                    <Link to="/services/courses-nav/long-term"> LONG TERM </Link>
+                                    <Link to="/services/courses/long-term"> LONG TERM </Link>
                                     
                                     <Route exact path={`${this.props.match.url}/long-term`} component={LongTermCourses} />  
                                 </div>

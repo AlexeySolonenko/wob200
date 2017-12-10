@@ -24,7 +24,7 @@ export const ServicesText = {
                     backImg : 'url(/img/courses/ShortTermCourses001.jpg)'
                 },
                 {
-                    link : '/services/courses-nav/short-term'
+                    link : '/services/courses/short-term'
                 }
             ]
         },
@@ -52,7 +52,7 @@ export const ServicesText = {
                     backImg : 'url(/img/courses/Long_TermCourses001.jpg)'
                 },
                 {
-                    link : '/services/courses-nav/long-term'
+                    link : '/services/courses/long-term'
                 }
                 
             ]
@@ -81,7 +81,7 @@ export const ServicesText = {
                     backImg : 'url(/img/courses/Business_courses_001.jpg)'
                 },
                 {
-                    link : '/services/courses-nav/business-courses'
+                    link : '/services/courses/business-courses'
                 }
                 
             ]
@@ -110,7 +110,7 @@ export const ServicesText = {
                     backImg : 'url(/img/courses/FamilyAndChildren_001.jpg)'
                 },
                 {
-                    link : '/services/courses-nav/familyKids-courses'
+                    link : '/services/courses/familyKids-courses'
                 }
                 
             ]
@@ -139,7 +139,7 @@ export const ServicesText = {
                     backImg : 'url(/img/courses/Exam_Preparation_Courses_001.jpg)'
                 },
                 {
-                    link : '/services/courses-nav/exams-courses'
+                    link : '/services/courses/exams-courses'
                 }
                 
             ]
@@ -168,7 +168,152 @@ export const ServicesText = {
                     backImg : 'url(/img/courses/Teaching001.jpg)'
                 },
                 {
-                    link : '/services/courses-nav/teacher-certs'
+                    link : '/services/courses/teacher-certs'
+                }
+                
+            ]
+        },
+        {
+            schoolResid: [
+                {
+                    title : [
+                        { ru : 'ШКОЛЬНАЯ РЕЗИДЕНЦИЯ' },
+                        { en : 'SCHOOL RESIDENCE' }
+                    ]
+                },
+                {
+                    descr : [
+                        { en : 'School provided shared apartmetn, often with included options and servcies. Live with other students like you!' },
+                        { ru : 'Проживайте с такими же студентами, как и Вы! В предоставляемых школами апартаментах с дополнительными опциями и услугами.' }
+                    ]
+                },
+                {
+                    buttonLbl : [
+                        { ru : 'Узнать больше' },
+                        { en : 'Learn more' }
+                    ]
+                },
+                {
+                    backImg : 'url(/img/accommodation/residence_002_shared_apartment.jpg)'
+                },
+                {
+                    link : '/services/accommodation/school-residence'
+                }
+                
+            ]
+        },
+        {
+            hostFam: [
+                {
+                    title : [
+                        { ru : 'ГОСТЕВАЯ СЕМЬЯ' },
+                        { en : 'HOST FAMILY' }
+                    ]
+                },
+                {
+                    descr : [
+                        { en : 'Officially registered host families. Friendly and cozy home-like conditions. Popular among both, kids and adults!' },
+                        { ru : 'Официально зарегистрированные гостевые семьи. Уютная, дружелюбная домашняя атмосфера. Пользуется спросом не только среди детей, но и среди взрослых!' }
+                    ]
+                },
+                {
+                    buttonLbl : [
+                        { ru : 'Узнать больше' },
+                        { en : 'Learn more' }
+                    ]
+                },
+                {
+                    backImg : 'url(/img/accommodation/host_family_003.jpg)'
+                },
+                {
+                    link : '/services/accommodation/host-family'
+                }
+                
+            ]
+        },
+        {
+            hotel: [
+                {
+                    title : [
+                        { ru : 'ОТЕЛЬ ИЛИ ГОСТИНИЦА' },
+                        { en : 'HOTEL' }
+                    ]
+                },
+                {
+                    descr : [
+                        { en : 'Wide variaty of single and shared rooms in hotels for any budget and wish. These are exclusively hotels officially contracted by schoools.' },
+                        { ru : 'Отели и гостиницы на любой кошелек и вкус. В данном разделе представлены только отели, с которыми у школ заключены официальные договора.' }
+                    ]
+                },
+                {
+                    buttonLbl : [
+                        { ru : 'Узнать больше' },
+                        { en : 'Learn more' }
+                    ]
+                },
+                {
+                    backImg : 'url(/img/accommodation/hotels/hotel_5_002.jpg)'
+                },
+                {
+                    link : '/services/accommodation/hotel'
+                }
+                
+            ]
+        },
+        {
+            camp: [
+                {
+                    title : [
+                        { ru : 'ЛАГЕРЬ' },
+                        { en : 'CAMP' }
+                    ]
+                },
+                {
+                    descr : [
+                        { en : 'Beautiful package offer for kids and teens! Many options and combinations avaialble.' },
+                        { ru : 'Прекрасные пакетные программы проживания в лагере для детей и подростков!' }
+                    ]
+                },
+                {
+                    buttonLbl : [
+                        { ru : 'Узнать больше' },
+                        { en : 'Learn more' }
+                    ]
+                },
+                {
+                    backImg : 'url(/img/accommodation/camp_002.jpg)'
+                },
+                {
+                    link : '/services/accommodation/camp'
+                }
+                
+            ]
+        },
+        {
+            famMix: [
+                {
+                    title : [
+                        { ru : 'СЕМЕЙНЫЕ ПРОГРАММЫ' },
+                        { en : 'FAMILY PACKAGES' }
+                    ]
+                },
+                {
+                    descr : [
+                        { en : 'Accommodation for families whos members are studying in different schools.' },
+                        { ru : 'Опции проживания на те случаи, когда члены семьи обучаются в разных школах.' }
+                    ]
+                },
+                {
+                    buttonLbl : [
+                        { ru : 'Узнать больше' },
+                        { en : 'Learn more' }
+                    ]
+                },
+                {
+                    backImg : 'url(/img/accommodation/FamilyMix_002.jpg)'
+                },
+                {
+                    link : '/services/accommodation/family-mix'
                 }
                 
             ]
